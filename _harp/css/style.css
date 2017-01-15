@@ -1,0 +1,364 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+
+body {
+    line-height: 1.7em;
+    color: salmon;
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+    line-height: 1.1em;
+}
+
+h4 {
+    padding-left: 30px;
+}
+
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+
+p {
+    padding: 7%;
+    padding-top: 1%;
+}
+
+.l-box {
+    padding: 1%;
+    height: 70vh;
+}
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+.home-menu {
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    background-size: 100%;
+    height: 50px;
+    background-color: SKYBLUE;
+    background-image: url("http://i68.tinypic.com/f22bl4.jpg");
+}
+
+.home-menu {}
+
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    box-shadow: 0px 10px 30px 1px rgba(0, 0, 0, 0.4);
+    /* I need a higher z-index here because of the scroll-over effect. */
+}
+
+.home-menu .pure-menu-heading {
+    color: salmon;
+    font-family: 'Bungee Shade', cursive;
+    width: 100%;
+    height: 40px;
+    margin-top: 2px;
+    font-size: 1.2em;
+}
+
+.home-menu .pure-menu-selected a {
+    color: #1f8dd6;
+}
+
+.home-menu a {
+    color: salmon;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+    background: none;
+    border-bottom: none;
+    color: #1f8dd6;
+    opacity: 0.4;
+}
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+    background: salmon;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* This is the main heading that appears on the blue section */
+
+.splash-head {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    line-height: 1em;
+    margin-bottom: 10px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+
+/* This is the subheading that appears on the blue section */
+
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: linen;
+}
+
+
+/* This is the class used for the main content headers (<h2>) */
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2em;
+    color: linen;
+}
+
+
+/* This is the class used for the content sub-headers (<h3>) */
+
+.content-subhead {
+    color: salmon;
+}
+
+.content-subhead i {
+    margin-right: 7px;
+}
+
+.is-center {
+    text-align: center;
+    color: salmon;
+}
+/* This is the class used for the dark-background areas. */
+
+.ribbon {
+    background: salmon;
+    text-align: center;
+    color: linen;
+}
+
+.foto {
+    background-image: url("http://www.allmailservices.be/app/static/images/theme/header-home-crossmedia.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* This is the class used for the footer */
+
+.footer {
+    background: LINEN;
+    height: 10vh;
+}
+
+
+/*some styling for Photography stuff*/
+
+img {
+    filter: grayscale(100%);
+}
+
+img:hover {
+    transition-delay;
+    1s;
+    filter: grayscale(0%);
+}
+
+
+/* external css: flickity.css */
+
+* {
+    box-sizing: border-box;
+}
+
+.carousel {
+    width: 70%;
+    margin: auto;
+    /*border: 5px solid LINEN;*/
+    padding: 20px;
+}
+
+.carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    display: block;
+    height: 200px;
+}
+
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: salmon;
+    border: 2px solid salmon;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+/*styling for the graphic stuff*/
+.container {
+    padding: 5%;
+    margin: auto;
+}
+
+.box {
+    height: 400px;
+    width: 45%;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    margin: 20px;
+    border: 5px solid linen;
+    float:left;
+}
+
+.box1 {
+    background-image: url("http://65.media.tumblr.com/f0ec67367c6cdcb5213aa3115de693a7/tumblr_oh0biifV7G1vimo5yo1_1280.jpg");
+}
+
+.box2 {
+    background-image: url("http://67.media.tumblr.com/498217a9b6929126c759dffa36636d94/tumblr_og6dw4JX5X1vimo5yo1_1280.jpg");
+}
+
+.box3 {
+    background-image: url("http://67.media.tumblr.com/8a47ed7b68a4290f4febff5e001ae4c4/tumblr_ogl4v7HfhT1vimo5yo1_1280.jpg");
+    background-position: left;
+}
+
+.box4 {
+    background-image: url("http://67.media.tumblr.com/b84e70c2530233ec2ab479731e35beb7/tumblr_og6dkgS3ES1vimo5yo1_1280.jpg");
+}
+
+.box5 {
+    background-image: url("http://66.media.tumblr.com/9508f44b5c182c7ddd35fb7b0188aa56/tumblr_ofgfljHfHR1vimo5yo1_1280.jpg");
+}
+
+/*.flickity-prev-next-button{
+  background-color: salmon;
+}*/
+
+@media screen and ( min-width: 768px) {
+    .carousel-cell img {
+        height: 300px;
+    }
+}
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+
+@media (min-width: 48em) {
+    /* We increase the body font size */
+    body {
+        font-size: 16px;
+    }
+    /* We want to give the content area some more padding */
+    .content {
+        padding: 1em;
+    }
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .home-menu {
+        text-align: left;
+    }
+    .home-menu ul {
+        float: right;
+    }
+    /* We increase the height of the splash-container */
+    /*    .splash-container {
+        height: 500px;
+    }*/
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 50%;
+        height: 50%;
+    }
+    .splash-head {
+        font-size: 250%;
+    }
+    /* We remove the border-separator assigned to .l-box-lrg */
+    .l-box-lrg {
+        border: none;
+    }
+}
+
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {
+        font-size: 300%;
+    }
+}
